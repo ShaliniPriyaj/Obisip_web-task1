@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #3ab7e4, #fa0d84);
+    color: #6b0157;
+}
+
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:linear-gradient(to right, #3ab7e4, #1a054d);
+    color: #000740;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.featured-movie {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie-card {
+    width: 500px;
+    height: 1000px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.title-card {
+    width: 1350px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+    justify-content: space-around;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.movie-card:hover img {
+    transform: scale(1.2);
+}
+
+.movie-card h3,
+.movie-card p {
+    margin: 0;
+    color: #060000;
+    text-align: left
+}
+
+.artist-button {
+    background-color: #49e966;
+    color: #028c00;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.artist-button:hover {
+    background-color: #169718;
+}
+
+.cta-button {
+    background-color: #6b0157;
+    color: #fa0d84;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #453c3c;
+}
+
+footer {
+    background-color:linear-gradient(to right, #fa0d84, #38011c) ;;
+    color: #6b0157;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
